@@ -1,9 +1,0 @@
-#!/bin/bash
-apt update  
-apt install git curl build-essential cmake ssh openssh-server
-systemctl enable ssh
-systemctl start ssh
-ufw allow ssh
-ufw enable
-reboot
-
