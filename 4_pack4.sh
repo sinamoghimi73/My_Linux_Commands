@@ -7,13 +7,13 @@ sudo apt update
 
 sudo apt install ros-noetic-desktop-full -y
 
-sudo apt install ros-noetic-slam-gmapping ros-noetic-ros-numpy ros-noetic-ros-numpy ros-noetic-teleop-twist-keyboard -y
+sudo apt install -y ros-noetic-slam-gmapping ros-noetic-ros-numpy ros-noetic-ros-numpy ros-noetic-teleop-twist-keyboard ros-noetic-pcl-ros
 
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
 source ~/.bashrc
 
-sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential pcl-tools -y
+sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential pcl-tools
 
 sudo rosdep init
 
